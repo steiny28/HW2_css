@@ -1,0 +1,156 @@
+/* Ensure consistent box-sizing for all elements */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Reset default margin and padding for body and html */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styling for body */
+body {
+    /* Background gradient with fallback color */
+    background: url('ptrbackground.jpg'),  #EBF0F6;
+    background: -moz-linear-gradient(top, #EBF0F6 0%, #418ACC 55%, #00569F 100%);
+    background: -webkit-linear-gradient(top, #EBF0F6 0%, #418ACC 55%, #00569F 100%);
+    background: linear-gradient(to bottom, #EBF0F6 0%, #418ACC 55%, #00569F 100%);;
+    background-size: cover;
+    color: #666;
+    padding-bottom: 70px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    height: 100vh;
+}
+
+/* Styling for wrapper */
+#wrapper {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "header header"
+        "nav content"
+        "footer footer";
+    height: 100%;
+    width: 80%;
+    min-width: 600px;
+    margin: 0 auto;
+}
+
+/* Styling for header */
+header {
+    grid-area: header;
+    background-image: url("sunset.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    background-color: #000032;
+    color: white;
+    padding: 10px 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    height: 100px;
+}
+
+/* Styling for navigation */
+nav {
+    grid-area: nav;
+    background-color: #90C8E3;
+    padding: 10px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Styling for navigation links */
+nav a {
+    text-decoration: none;
+    color: #000032;
+    display: block;
+    padding: 5px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+    font-size: 19px;
+    text-align: left;
+}
+
+/* Styling for navigation links on hover */
+nav a:hover {
+    color: #3399CC;
+    background-color: #000032;
+}
+
+/* Styling for content area */
+#content {
+    grid-area: content;
+    padding: 25px;
+    background-color: white;
+    overflow: hidden; 
+}
+
+/* Styling for unordered lists in content area */
+#content ul {
+    list-style-image: url('marker.gif');
+}
+
+/* Styling for image containers */
+.image-container {
+    overflow: hidden; 
+}
+
+/* Styling for images in image containers */
+.image-container img {
+    max-width: 50%;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+.image-container ul {
+    list-style-type: disc;
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+}
+
+/* Styling for footer */
+footer {
+    grid-area: footer;
+    font-family: Georgia, "Times New Roman", serif;
+    text-align: center;
+    padding: 10px;
+    color: #000032;
+    background-color: white;
+    width: 100%;
+}
+
+/* Styling for h1 */
+h1 {
+    margin-bottom: 0;
+    padding: 10px;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Styling for h2 */
+h2 {
+    color: #3399CC;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Styling for contact information */
+#contact {
+    font-size: 90%;
+    height: 150px; 
+}
+/*Styling for resort information*/
+.resort {
+    color: #3399CC;
+    font-weight: bold;
+}
