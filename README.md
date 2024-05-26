@@ -30,6 +30,8 @@ I would like to acknowledge the following sources of help:
 
 Online resources: Various tutorials and documentation were consulted for understanding CSS properties and techniques: 
 https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Introduction
+
+link: git@github.com:steiny28/HW2_css.git
 https://www.w3schools.com/cssref/pr_list-style-image.php
 https://www.w3schools.com/css/css_website_layout.asp
 
